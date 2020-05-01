@@ -37,23 +37,16 @@ exports.createPages = ({ graphql, actions }) => {
     });
 
     // Create the paginated home view
-    const cardsPerPage = 6;
-    const numPages = Math.ceil(works.length / cardsPerPage);
-
-    Array.from({ length: numPages }).forEach((_, i) => {
+   
+  
       createPage({
-        path: i === 0 ? `/` : `/${i + 1}`,
+        path:  `/`,
         component: path.resolve("./src/templates/homepage.js"),
 
         // pass variables to the album component using page context
-        context: {
-          limit: cardsPerPage,
-          skip: i * cardsPerPage,
-          numPages,
-          currentPage: i + 1
-        }
+       
       });
-    });
+   
   });
 };
 
