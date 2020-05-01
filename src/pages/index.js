@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 import Link from "@material-ui/core/Link";
 import LOGO from "../images/LOGO.png";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { graphql } from "gatsby";
+
 import Hero from "../components/Hero.js";
 import Footer from "../components/Footer.js";
 
@@ -117,31 +117,3 @@ export default function Album(props) {
   );
 }
 
-export const pageQuery = graphql`
-  query allArtQuery($skip: Int!, $limit: Int!) {
-    allFile(
-      filter: { extension: { regex: "/(jpg)/" } }
-      limit: $limit
-      skip: $skip
-    ) {
-      edges {
-        node {
-          id
-          name
-          fields {
-            exif {
-              description
-              title
-              copyright
-            }
-          }
-          childImageSharp {
-            fluid(maxWidth: 2000, maxHeight: 1700, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
-  }
-`;
