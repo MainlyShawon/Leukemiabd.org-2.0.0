@@ -4,36 +4,25 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
 export default function Footer() {
-  const useStyles = makeStyles(theme => ({
+  const useStyles = makeStyles((theme) => ({
     footer: {
       backgroundColor: theme.palette.background.paper,
-      padding: theme.spacing(6)
-    }
+      padding: theme.spacing(6),
+    },
   }));
 
   const classes = useStyles();
 
   return (
     <footer className={classes.footer}>
-      <Typography variant="h6" align="center" gutterBottom>
-        Gatsby Material Album
-      </Typography>
-      <Typography
-        variant="subtitle1"
-        align="center"
-        color="textSecondary"
-        component="p"
-      >
-        An impeccable pairing
+      <Typography variant="body2" color="textSecondary" align="center">
+        Copyright © 2016-Present. Leukemia and Lymphoma Society of Bangladesh.
+        All rights reserved
       </Typography>
       <Typography variant="body2" color="textSecondary" align="center">
-        {"Built with "}
-        <a color="inherit" href="https://material-ui.com/">
-          Material-UI
-        </a>
-        {" by "}
-        <a color="inherit" href="https://github.com/joeTrubenstein">
-          @JoeTrubenstein
+        {"Built with ❤️ by "}
+        <a color="inherit" href="https://mainly.technology">
+          Mainly Technology
         </a>
       </Typography>
     </footer>

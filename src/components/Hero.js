@@ -30,29 +30,29 @@ export default function Hero() {
           color="textPrimary"
           gutterBottom
         >
-          Gatsby + Material UI
+         আসুন ক্যান্সারকে পরাজিত করি
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" paragraph>
-          An impeccable pairing
+        আমাদের এ লড়াইয়ে পাশে থাকুন 
         </Typography>
         <div className={classes.heroButtons}>
           <Grid container spacing={2} justify="center">
             <Grid item>
               <Button
-                href="https://material-ui.com"
+                href="#"
                 variant="contained"
                 color="primary"
               >
-                Material-UI
+              যাকাত ফান্ড
               </Button>
             </Grid>
             <Grid item>
               <Button
-                href="https://www.gatsbyjs.org"
+                href="#"
                 variant="outlined"
                 color="primary"
               >
-                Gatsby JS
+                ডোনেট করুন
               </Button>
             </Grid>
           </Grid>

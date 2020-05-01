@@ -15,6 +15,15 @@ module.exports = {
         ignore: [`**/\.*`],
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Leukemiabd.org`,
+        short_name: `Leukemia Bangladesh`,
+        start_url: `/`,
+        icon: `src/images/LOGO.png`, // This path is relative to the root of the site.
+      },
+    },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     'gatsby-plugin-top-layout',
@@ -32,6 +41,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
   ],
   siteMetadata: {
-    title: 'Gatsby Material Album',
+    title: 'আসুন ক্যান্সারকে পরাজিত করি'
   },
 };

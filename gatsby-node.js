@@ -43,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/` : `/${i + 1}`,
-        component: path.resolve("./src/templates/album.js"),
+        component: path.resolve("./src/templates/homepage.js"),
 
         // pass variables to the album component using page context
         context: {
